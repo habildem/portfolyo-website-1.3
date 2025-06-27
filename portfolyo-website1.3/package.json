@@ -4,8 +4,8 @@
   "description": "Habil Demirci - Portfolio Website",
   "main": "index.html",
   "scripts": {
-    "build": "echo 'No build step required for static HTML'",
-    "start": "echo 'Static HTML site - no server required'"
+    "build": "echo 'Static files ready'",
+    "start": "echo 'Static HTML site'"
   },
   "keywords": ["portfolio", "design", "ios", "developer"],
   "author": "Habil Demirci",
