@@ -7,17 +7,13 @@
     <meta content="iOS Developer" name="description"/>
     <meta content="Habil Demirci" property="og:title"/>
     <meta content="iOS Developer" property="og:description"/>
-    <meta content="https://www.dl.dropboxusercontent.com/s/s2y7j0itzlrnrsz/betty%20and%20I.jpeg" property="og:image"/>
     <meta content="Habil Demirci" property="twitter:title"/>
     <meta content="iOS Developer" property="twitter:description"/>
-    <meta content="https://www.dl.dropboxusercontent.com/s/s2y7j0itzlrnrsz/betty%20and%20I.jpeg" property="twitter:image"/>
     <meta property="og:type" content="website"/>
     <meta content="summary_large_image" name="twitter:card"/>
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
     
-    <!-- Webflow CSS - Orijinal sitedeki gibi -->
-    <link href="https://cdn.prod.website-files.com/5c58d24c0c3ff625822bee4b/css/seyit.webflow.3ee650ec9.css" rel="stylesheet" type="text/css"/>
-    
+    <link rel="stylesheet" href="habil.css">
     <!-- Media Queries CSS -->
     <style>
         @media (min-width:992px) {
@@ -118,6 +114,18 @@
 </head>
 
 <body>
+  <!-- Liquid Glass SVG Filter -->
+  <svg width="0" height="0" style="position:absolute;pointer-events:none;z-index:-1" aria-hidden="true" focusable="false">
+    <filter id="liquidGlass" color-interpolation-filters="sRGB">
+      <feTurbulence type="turbulence" baseFrequency="0.015 0.03" numOctaves="2" seed="3" result="turb"/>
+      <feDisplacementMap in2="turb" in="SourceGraphic" scale="18" xChannelSelector="R" yChannelSelector="G"/>
+      <feGaussianBlur stdDeviation="1.2"/>
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+    </filter>
+  </svg>
+    <button class="liquid-glass-btn">
+      ⭐️
+    </button>
     <div class="_22-section">
         <div class="_22-homemaincolumn w-row">
             
@@ -131,7 +139,7 @@
                             <div role="listitem" class="collection-item-4 w-dyn-item">
                                 <div data-w-id="e30fc721-3b58-d17e-eeb2-4554dfd40eda" class="_22-companyforproject w-embed">
                                     <div style="display: flex; flex-direction: row; align-items: center; padding-bottom:24px">
-                                        <img src="./videofetch_logo.png" height="16px">
+                                        
                                         <text style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue'; opacity:1; padding-left: 8px; font-size: 14px">VidFetch</text>
                                     </div>
                                 </div>
@@ -151,7 +159,7 @@
                                                loop="loop" 
                                                muted="muted"  
                                                playsinline="playsinline" 
-                                               poster="https://www.dl.dropboxusercontent.com/s/85io6p4762caep4/BettyPoster3.png">
+                                               >
                                             <source src="./VideoFetch.mp4" type="video/mp4">
                                         </video>
                                     </div>
@@ -168,7 +176,7 @@
                             <div role="listitem" class="collection-item-4 w-dyn-item">
                                 <div data-w-id="e30fc721-3b58-d17e-eeb2-4554dfd40eda" class="_22-companyforproject w-embed">
                                     <div style="display: flex; flex-direction: row; align-items: center; padding-bottom:24px">
-                                        <img src="./smart_beauty_logo.png" height="16px">
+                                        
                                         <text style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue'; opacity:1; padding-left: 8px; font-size: 14px">Smart Beauty</text>
                                     </div>
                                 </div>
@@ -187,7 +195,7 @@
                                                loop="loop" 
                                                muted="muted"  
                                                playsinline="playsinline" 
-                                               poster="https://www.dl.dropboxusercontent.com/s/85io6p4762caep4/BettyPoster3.png">
+                                               >
                                             <source src="./Smart_Beauty_Comments.mp4" type="video/mp4">
                                         </video>
                                     </div>
@@ -195,7 +203,7 @@
                                 </div>
                                 
                                 <div data-w-id="e30fc721-3b58-d17e-eeb2-4554dfd40edf" class="_22-navbuttonblock">
-                                    <div class="_22-navbutton">Smart Beauty Comments</div>
+                                    <div class="_22-navbutton">Comments</div>
                                     <div class="_22-navbutttonyear">2025</div>
                                 </div>
                             </div>
@@ -204,7 +212,7 @@
                             <div role="listitem" class="collection-item-4 w-dyn-item">
                                 <div data-w-id="e30fc721-3b58-d17e-eeb2-4554dfd40eda" class="_22-companyforproject w-embed">
                                     <div style="display: flex; flex-direction: row; align-items: center; padding-bottom:24px">
-                                        <img src="./smart_beauty_logo.png" height="16px">
+                                        
                                         <text style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue'; opacity:1; padding-left: 8px; font-size: 14px">Smart Beauty</text>
                                     </div>
                                 </div>
@@ -223,7 +231,7 @@
                                                loop="loop" 
                                                muted="muted"  
                                                playsinline="playsinline" 
-                                               poster="https://www.dl.dropboxusercontent.com/s/85io6p4762caep4/BettyPoster3.png">
+                                               >
                                             <source src="./Smart_Beauty_Same_Day_Unlimited.mp4" type="video/mp4">
                                         </video>
                                     </div>
@@ -240,7 +248,7 @@
                             <div role="listitem" class="collection-item-4 w-dyn-item">
                                 <div data-w-id="e30fc721-3b58-d17e-eeb2-4554dfd40eda" class="_22-companyforproject w-embed">
                                     <div style="display: flex; flex-direction: row; align-items: center; padding-bottom:24px">
-                                        <img src="./smart_beauty_logo.png" height="16px">
+                                        
                                         <text style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue'; opacity:1; padding-left: 8px; font-size: 14px">Smart Beauty</text>
                                     </div>
                                 </div>
@@ -259,7 +267,7 @@
                                                loop="loop" 
                                                muted="muted"  
                                                playsinline="playsinline" 
-                                               poster="https://www.dl.dropboxusercontent.com/s/85io6p4762caep4/BettyPoster3.png">
+                                               >
                                             <source src="./Smart_Beauty_Auto_Replenish.mp4" type="video/mp4">
                                         </video>
                                     </div>
@@ -276,7 +284,7 @@
                             <div role="listitem" class="collection-item-4 w-dyn-item">
                                 <div data-w-id="e30fc721-3b58-d17e-eeb2-4554dfd40eda" class="_22-companyforproject w-embed">
                                     <div style="display: flex; flex-direction: row; align-items: center; padding-bottom:24px">
-                                        <img src="./smart_beauty_logo.png" height="16px">
+                                        
                                         <text style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue'; opacity:1; padding-left: 8px; font-size: 14px">Smart Beauty</text>
                                     </div>
                                 </div>
@@ -295,7 +303,7 @@
                                                loop="loop" 
                                                muted="muted"  
                                                playsinline="playsinline" 
-                                               poster="https://www.dl.dropboxusercontent.com/s/85io6p4762caep4/BettyPoster3.png">
+                                               >
                                             <source src="./Smart_Beauty_Beauty_Preferences.mp4" type="video/mp4">
                                         </video>
                                     </div>
@@ -312,7 +320,7 @@
                             <div role="listitem" class="collection-item-4 w-dyn-item">
                                 <div data-w-id="e30fc721-3b58-d17e-eeb2-4554dfd40eda" class="_22-companyforproject w-embed">
                                     <div style="display: flex; flex-direction: row; align-items: center; padding-bottom:24px">
-                                        <img src="./smart_beauty_logo.png" height="16px">
+                                        
                                         <text style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue'; opacity:1; padding-left: 8px; font-size: 14px">Smart Beauty</text>
                                     </div>
                                 </div>
@@ -331,7 +339,7 @@
                                                loop="loop" 
                                                muted="muted"  
                                                playsinline="playsinline" 
-                                               poster="https://www.dl.dropboxusercontent.com/s/85io6p4762caep4/BettyPoster3.png">
+                                               >
                                             <source src="./Smart_Beauty_Privacy_Policy_Modal.mp4" type="video/mp4">
                                         </video>
                                     </div>
@@ -348,7 +356,7 @@
                             <div role="listitem" class="collection-item-4 w-dyn-item">
                                 <div data-w-id="e30fc721-3b58-d17e-eeb2-4554dfd40eda" class="_22-companyforproject w-embed">
                                     <div style="display: flex; flex-direction: row; align-items: center; padding-bottom:24px">
-                                        <img src="./smart_beauty_logo.png" height="16px">
+                                        
                                         <text style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue'; opacity:1; padding-left: 8px; font-size: 14px">Smart Beauty</text>
                                     </div>
                                 </div>
@@ -367,7 +375,7 @@
                                                loop="loop" 
                                                muted="muted"  
                                                playsinline="playsinline" 
-                                               poster="https://www.dl.dropboxusercontent.com/s/85io6p4762caep4/BettyPoster3.png">
+                                               >
                                             <source src="./Smart_Beauty_Notifications.mp4" type="video/mp4">
                                         </video>
                                     </div>
@@ -384,7 +392,7 @@
                             <div role="listitem" class="collection-item-4 w-dyn-item">
                                 <div data-w-id="e30fc721-3b58-d17e-eeb2-4554dfd40eda" class="_22-companyforproject w-embed">
                                     <div style="display: flex; flex-direction: row; align-items: center; padding-bottom:24px">
-                                        <img src="./smart_beauty_logo.png" height="16px">
+                                        
                                         <text style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue'; opacity:1; padding-left: 8px; font-size: 14px">Smart Beauty</text>
                                     </div>
                                 </div>
@@ -403,7 +411,7 @@
                                                loop="loop" 
                                                muted="muted"  
                                                playsinline="playsinline" 
-                                               poster="https://www.dl.dropboxusercontent.com/s/85io6p4762caep4/BettyPoster3.png">
+                                               >
                                             <source src="./Smart_Beauty_Favorites.mp4" type="video/mp4">
                                         </video>
                                     </div>
@@ -420,7 +428,7 @@
                             <div role="listitem" class="collection-item-4 w-dyn-item">
                                 <div data-w-id="e30fc721-3b58-d17e-eeb2-4554dfd40eda" class="_22-companyforproject w-embed">
                                     <div style="display: flex; flex-direction: row; align-items: center; padding-bottom:24px">
-                                        <img src="./smart_beauty_logo.png" height="16px">
+                                        
                                         <text style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue'; opacity:1; padding-left: 8px; font-size: 14px">Smart Beauty</text>
                                     </div>
                                 </div>
@@ -439,7 +447,7 @@
                                                loop="loop" 
                                                muted="muted"  
                                                playsinline="playsinline" 
-                                               poster="https://www.dl.dropboxusercontent.com/s/85io6p4762caep4/BettyPoster3.png">
+                                               >
                                             <source src="./Smart_Beauty_HomePage.mp4" type="video/mp4">
                                         </video>
                                     </div>
