@@ -3030,21 +3030,41 @@ html.w-mod-js *[data-ix="fade-in"] {
     right: auto;
     margin-right: 0px;
   }
-}
 
-@media screen and (max-width: 479px) {
-  .header-section {
-    position: fixed;
-    display: block;
-    padding-top: 16px;
+  /* Liquid Glass Effect - reusable class */
+  @keyframes blobMotion {
+      0%   { transform: translate(-4%, -3%) scale(1.00) rotate(0deg); }
+      25%  { transform: translate(3%, -1%)  scale(1.04) rotate(3deg); }
+      50%  { transform: translate(2%, 3%)   scale(0.99) rotate(-3deg); }
+      75%  { transform: translate(-2%, 2%)  scale(1.03) rotate(2deg); }
+      100% { transform: translate(-4%, -3%) scale(1.00) rotate(0deg); }
   }
 
-  .blog-content {
-    width: 95%;
-    margin-bottom: 40px;
+  .liquid-glass-bg {
+      position: absolute;
+      inset: 0;
+      background: rgba(255, 255, 255, 0.18);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.20);
+      backdrop-filter: blur(16px) saturate(180%);
+      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      filter: url(#liquid-glass-filter);
+      pointer-events: none;
+      overflow: hidden;
+      animation: blobMotion 9s ease-in-out infinite;
+      z-index: 1;
   }
 
-  .link-to-page {
+  .liquid-glass-bg::before {
+      content: "";
+      position: absolute;
+      inset: -20%;
+      background:
+          radial-gradient(160px 160px at 25% 35%, rgba(255,255,255,0.65), rgba(255,255,255,0) 70%),
+          radial-gradient(220px 220px at 70% 70%, rgba(255,255,255,0.35), rgba(255,255,255,0) 70%);
+      opacity: 0.9;
+      animation: blobMotion 10s ease-in-out infinite;
+      pointer-events: none;
     width: 90%;
   }
 
